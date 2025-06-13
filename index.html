@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ugo Stanciu | BUT Réseaux & Télécoms</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/4294c838dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-brand">U.S.</div>
+        <ul class="nav-menu">
+            <li><a href="#home" data-section="home">Accueil</a></li>
+            <li><a href="#about" data-section="about">À propos</a></li>
+            <li><a href="#projects" data-section="projects">Projets</a></li>
+            <li><a href="#skills" data-section="skills">Compétences</a></li>
+            <li><a href="#projection" data-section="projection">Projection</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="home" class="section active">
+        <div class="home-container">
+            <div class="home-content">
+                <h1 class="home-title">
+                    <span class="title-line">MON</span>
+                    <span class="title-line">PORTFOLIO</span>
+                    <span class="title-line accent">UGO STANCIU</span>
+                    <span class="title-line">RÉSEAUX</span>
+                    <span class="title-line small">& CYBERSÉCURITÉ</span>
+                </h1>
+                <div class="home-subtitle">
+                    <p>Étudiant BUT Réseaux & Télécoms</p>
+                    <p>IUT de Caen - Première année</p>
+                </div>
+                <button class="cta-button" data-section="about">
+                    Découvrir mon parcours
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+            <div class="network-animation">
+                <svg viewBox="0 0 800 600" class="network-svg">
+                    <defs>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Lignes de connexion -->
+                    <g class="connections">
+                        <line x1="100" y1="150" x2="300" y2="100" class="connection-line"/>
+                        <line x1="300" y1="100" x2="500" y2="200" class="connection-line"/>
+                        <line x1="500" y1="200" x2="700" y2="150" class="connection-line"/>
+                        <line x1="300" y1="100" x2="200" y2="300" class="connection-line"/>
+                        <line x1="500" y1="200" x2="600" y2="400" class="connection-line"/>
+                        <line x1="200" y1="300" x2="400" y2="350" class="connection-line"/>
+                        <line x1="400" y1="350" x2="600" y2="400" class="connection-line"/>
+                    </g>
+                    <!-- Nœuds -->
+                    <g class="nodes">
+                        <circle cx="100" cy="150" r="8" class="node"/>
+                        <circle cx="300" cy="100" r="12" class="node main"/>
+                        <circle cx="500" cy="200" r="10" class="node"/>
+                        <circle cx="700" cy="150" r="8" class="node"/>
+                        <circle cx="200" cy="300" r="9" class="node"/>
+                        <circle cx="400" cy="350" r="11" class="node"/>
+                        <circle cx="600" cy="400" r="8" class="node"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="section">
+        <div class="about-container">
+            <div class="about-visual">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./images/tete.PNG" alt="">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Ugo Stanciu</h3>
+                        <p>19 ans • Étudiant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">À PROPOS</h2>
+                <div class="about-text">
+                    <p class="intro">
+                        Passionné par l'univers des réseaux et de la cybersécurité, 
+                        je suis actuellement en première année de BUT Réseaux & Télécoms 
+                        à l'IUT de Caen.
+                    </p>
+                    <div class="passions-grid">
+                        <div class="passion-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Cybersécurité</h4>
+                            <p>Analyse des vulnérabilités, sécurisation des infrastructures</p>
+                        </div>
+                        <div class="passion-item">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>Réseaux</h4>
+                            <p>Configuration, optimisation et supervision des réseaux</p>
+                        </div>
+                        <div class="passion-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Programmation</h4>
+                            <p>Scripts d'automatisation, développement d'outils réseau</p>
+                        </div>
+                        <div class="passion-item">
+                            <i class="fas fa-music"></i>
+                            <h4>Musique</h4>
+                            <p>Production musicale, équilibre créatif</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="objectives">
+                    <blockquote class="quote">
+                        "Mon objectif : devenir ingénieur en cybersécurité, 
+                        poursuivre en alternance et explorer les opportunités 
+                        à l'international."
+                    </blockquote>
+                </div>
+
+                <button class="cta-button2" data-section="projects">
+                    Découvrir mes projets
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="section">
+        <div class="projects-container">
+            <h2 class="section-title">MES PROJETS : Cliquer pour plus de détails</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="sae11">
+                    <div class="project-visual">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE 1.1</h3>
+                        <h4>Sensibilisation à l'hygiène informatique et à la cybersécurité</h4>
+                        <p>Étude approfondie des mécanismes SSH et des bonnes pratiques.</p>
+                        <div class="project-tags">
+                            <span class="tag">Certification MOOC</span>
+                            <span class="tag">Sécurité</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="sae12">
+                    <div class="project-visual">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE 1.2</h3>
+                        <h4>S'initier aux réseaux informatiques</h4>
+                        <p>Conception d’un réseau VLAN sécurisé et virtualisation des services.</p>
+                        <div class="project-tags">
+                            <span class="tag">Réseau</span>
+                            <span class="tag">VLAN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="sae14">
+                    <div class="project-visual">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE 1.4</h3>
+                        <h4>Se présenter sur Internet</h4>
+                        <p>Création d’un site web responsive, accessible et conforme aux standards.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">W3C</span>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="sae15">
+                    <div class="project-visual">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE 1.5</h3>
+                        <h4>Traitement des données</h4>
+                        <p>Automatiser le traitement et l’analyse de données issues d’API.</p>
+                        <div class="project-tags">
+                            <span class="tag">API</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-project="sae21">
+                    <div class="project-visual">
+                        <i class="fas fa-computer"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE 2.1</h3>
+                        <h4>Intégration d'une station à un domaine</h4>
+                        <p>Intégrer une station à un domaine Active Directory en utilisant Windows Server 2019 et Windows 10.</p>
+                        <div class="project-tags">
+                            <span class="tag">ADDS</span>
+                            <span class="tag">Proxmox</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="sae22">
+                    <div class="project-visual">
+                        <i class="fas fa-signal"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE 2.2</h3>
+                        <h4>Analyse de signaux d’un système de transmission</h4>
+                        <p>Analyse de signaux avec RTL-SDR et Matlab.</p>
+                        <div class="project-tags">
+                            <span class="tag">RTL-SDR</span>
+                            <span class="tag">Matlab</span>
+                            <span class="tag">Analyse de données</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-project="sae23">
+                    <div class="project-visual">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE 2.03</h3>
+                        <h4>Instant Weather</h4>
+                        <p>Page Web qui affiche des informations météorologiques pour une commune choisie par l'utilisateur.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">API Météo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="sae24">
+                    <div class="project-visual">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAE 2.4</h3>
+                        <h4>Projet Intégratif</h4>
+                        <p>Projet de fin d'année qui mobilise toutes les connaissances acquises dans les différentes Ressources.</p>
+                        <div class="project-tags">
+                            <span class="tag">Réseau</span>
+                            <span class="tag">Télécom</span>
+                            <span class="tag">Gestion de projet</span>
+                        </div>
+                    </div>
+                </div>
+            
+
+                
+    
+            </div>
+
+            <button class="cta-button4" data-section="skills">
+                    Découvrir les compétences associées
+                    <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="section">
+        <div class="skills-container">
+            <h2 class="section-title">COMPÉTENCES</h2>
+            <div class="skills-grid">
+                <!-- Exemple pour UE 1 -->
+                <div class="skill-card" data-skill="ue1" onclick="showUEDetails('ue1')">
+                    <div class="click-indicator">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>UE 1</h3>
+                    <h4>Administrer les réseaux et l'Internet</h4>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <p>Configuration réseau, administration système, sécurité</p>
+                </div>
+
+                <!-- Exemple pour UE 2 -->
+                <div class="skill-card" data-skill="ue2" onclick="showUEDetails('ue2')">
+                    <div class="click-indicator">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>UE 2</h3>
+                    <h4>Connecter les entreprises et les usagers</h4>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                    <p>Transmission de données, télécommunications, ToIP</p>
+                </div>
+
+                <!-- Exemple pour UE 3 -->
+                <div class="skill-card" data-skill="ue3" onclick="showUEDetails('ue3')">
+                    <div class="click-indicator">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>UE 3</h3>
+                    <h4>Créer des outils et des applications informatiques pour les R&T</h4>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                    </div>
+                    <p>Développement, programmation, outils informatiques</p>
+                </div>
+
+                    
+            </div>
+            
+            <!-- Radar Chart -->
+            <div class="radar-container">
+                <h3>Évaluation globale</h3>
+                <canvas id="radarChart" width="500" height="400"></canvas>
+            </div>
+            <button class="cta-button3" data-section="projection">
+                    Découvrir mes ambitions futures
+                    <i class="fas fa-arrow-up"></i>
+            </button>
+                
+        </div>
+    </section>
+
+    <!-- Section Projection -->
+    <section id="projection" class="section">
+        <div class="projection-container">
+            <h2 class="section-title">PROJECTION</h2>
+            <div class="projection-content">
+                <div class="evaluation-block">
+                    <h3>Bilan de ma première année</h3>
+                    <p class="evaluation-text">
+                        Cette première année en BUT Réseaux & Télécoms m'a permis de consolider 
+                        ma passion pour la cybersécurité tout en développant des compétences 
+                        techniques solides. Les projets pratiques m'ont appris l'importance 
+                        du travail en équipe et de la rigueur dans l'approche technique.
+                    </p>
+                    <div class="strengths-weaknesses">
+                        <div class="strengths">
+                            <h4>Points forts</h4>
+                            <ul>
+                                <li>Capacité d'analyse et de résolution de problèmes</li>
+                                <li>Curiosité technique et veille technologique</li>
+                                <li>Travail collaboratif efficace</li>
+                                <li>Anglais niveau avancé</li>
+                            </ul>
+                        </div>
+                        <div class="weaknesses">
+                            <h4>Axes d'amélioration</h4>
+                            <ul>
+                                <li>Approfondissement des protocoles avancés</li>
+                                <li>Développement des compétences en communication</li>
+                                <li>Construire mon réseau professionnel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="future-goals">
+                    <blockquote class="big-quote">
+                        "L'avenir appartient à ceux qui 
+                        savent sécuriser les données 
+                        de demain."
+                    </blockquote>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025-2026</div>
+                            <div class="timeline-content">
+                                <h4>Deuxième année BUT</h4>
+                                <p>Spécialisation en cybersécurité, projets avancés</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025-2027</div>
+                            <div class="timeline-content">
+                                <h4>Alternance</h4>
+                                <p>Recherche d'une alternance en sécurité des systèmes</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2027+</div>
+                            <div class="timeline-content">
+                                <h4>Carrière</h4>
+                                <p>Ingénieur cybersécurité, expérience internationale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="export-section">               
+                <button class="export-btn" onclick="downloadCV()">
+                    <i class="fas fa-download"></i>
+                    Télécharger mon CV
+                </button>
+                <button class="export-btn" onclick="exportToPDF()">
+                    <i class="fas fa-download"></i>
+                    Exporter mon Portfolio en PDF
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales pour les projets détaillés -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
