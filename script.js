@@ -30,7 +30,7 @@ const projectsData = {
         title: "SAE 1.2 - S'initier aux réseaux informatiques",
         context: "Dans le cadre de cette SAE, nous avons été sollicités pour concevoir un réseau informatique fiable, structuré et sécurisé. L’objectif était de remplacer une infrastructure existante rudimentaire par un réseau segmenté, interconnecté et virtualisé, intégrant des services essentiels (DHCP, DNS, SMB, site web, etc.). Les attendus principaux :",
         objectives: [
-            "Implémentation de VLANs basés sur l’organigramme d'une entrprise fictive'",
+            "Implémentation de VLANs basés sur l’organigramme d'une entrprise fictive",
             "Routage inter-VLAN avec un switch L3",
             "RSTP et agrégation de liens",
             "Plan IPv4 structuré avec sous-réseaux optimisés",
@@ -91,7 +91,7 @@ no ip address`,
             "Lien vers le site : https://ugostanciu.github.io/SAE_14/",
             "Capture du site :"
         ],
-        image : "https://ugostanciu.github.io/portfolio/images/website.png",
+        image : "https://ugostanciu.github.io/portfolio/images/website.PNG",
         reflection: "Lors de la réalisation du projet, j'ai rencontré quelques défis. Le premier a concerné la mise en page responsive, où certaines sections du site ne s'affichaient pas correctement sur mobile. Cela était dû à une mauvaise gestion des media queries et à une utilisation limitée de Flexbox. Pour résoudre cela, j'ai réajusté les media queries et mieux intégré Flexbox, assurant ainsi un affichage fluide sur tous les appareils. Ensuite, lors de la validation W3C, plusieurs erreurs ont été détectées dans mes balises HTML et dans des propriétés CSS non conformes. J'ai corrigé ces erreurs en veillant à bien respecter les bonnes pratiques, notamment en fermant correctement toutes les balises et en ajustant certaines propriétés CSS. Cela a permis de valider mon code avec succès. Enfin, certaines animations CSS n'étaient pas assez fluides. Après avoir revu mes durées d'animation et optimisé les propriétés concernées, j'ai réussi à rendre les animations beaucoup plus fluides et agréables à l'œil. Si c'était à refaire, je commencerais par tester plus fréquemment la responsivité et la validité du code, afin de corriger rapidement les erreurs de mise en page et de validation. J'éviterais également d'ajouter les animations trop tôt dans le processus pour me concentrer sur la structure principale du site en priorité.",
         competences: ["UE 3"]
     },
@@ -114,7 +114,7 @@ no ip address`,
     species_data = requests.get(data['species']['url']).json()
     entries = species_data['flavor_text_entries']
     return [entry['flavor_text'] for entry in entries if entry['language']['name'] == 'fr']`,
-        reflection: "Ce projet, réalisé en binôme, avait pour but de collecter, analyser et cartographier des données de couverture mobile à partir d’une API. Un des principaux problèmes rencontrés fut l’exploitation correcte des données issues de l’API, parfois mal documentée ou incomplète. En communiquant efficacement et en testant différents cas ensemble, nous avons mis en place un script Python fonctionnel, capable d’extraire et traiter les données pertinentes. Nous avons réparti les tâches de manière équilibrée : pendant que mon binôme s’occupait de la cartographie sous MATLAB, je me suis concentré sur le développement du script Python. Ce projet m’a permis de consolider mes compétences en traitement de données, en gestion d’erreurs, en structuration de script, et en travail d’équipe. Pour la suite, nous pourrions aller plus loin sur la partie analyse statistique, intégrer des visualisations plus poussées, ou concevoir une interface plus interactive pour la consultation des résultats.",
+        reflection: "Ce projet, réalisé en binôme, avait pour but de collecter, analyser et cartographier des données de couverture mobile à partir d’une API. Un des principaux problèmes rencontrés fut l’exploitation correcte des données issues de l’API, parfois mal documentée ou incomplète. En communiquant efficacement et en testant différents cas ensemble, nous avons mis en place un script Python fonctionnel, capable d’extraire et traiter les données pertinentes. Nous avons réparti les tâches de manière équilibrée : je me suis concentré sur le développement du script Python. Ce projet m’a permis de consolider mes compétences en traitement de données, en gestion d’erreurs, en structuration de script, et en travail d’équipe. Pour la suite, nous pourrions aller plus loin sur la partie analyse statistique, intégrer des visualisations plus poussées, ou concevoir une interface plus interactive pour la consultation des résultats.",
         competences: ["UE 3"]
     },
 
@@ -307,6 +307,21 @@ function showSection(sectionId) {
         targetSection.classList.add('fade-in');
         currentSection = sectionId;
     }
+    // Ajouter ou supprimer la classe en fonction de la section
+    if (sectionId === 'home') {
+        document.body.classList.remove('hide-home-content');
+        // // ou
+        // document.body.classList.add('home-section');
+    } else {
+        document.body.classList.add('hide-home-content');
+        // // ou
+        // document.body.classList.remove('home-section');
+    }
+    
+    // Mettre à jour currentSection
+    currentSection = sectionId;
+    
+
 }
 
 function updateActiveNav(activeLink) {
@@ -532,9 +547,15 @@ function closeModal() {
     window.location.reload();
 }
 
+function closeModal2() {
+    const modal = document.getElementById('modalOverlay');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
 
 function showCompetenceFromProject(competenceId) {
-    closeModal();
+    closeModal2();
     showSection('skills');
     // Scroll vers la compétence spécifique
     setTimeout(() => {

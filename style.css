@@ -1085,3 +1085,13 @@ body {
         max-height: 60vh;
     }
 }
+
+/* Lorsque la section active n'est pas 'home', masquer #homeContent */
+body:not(.home-section) #homeContent {
+    display: none;
+}
+
+/* Alternativement, si tu préfères utiliser une classe spécifique */
+.hide-home-content #homeContent {
+    display: none;
+}
