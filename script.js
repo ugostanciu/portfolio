@@ -22,7 +22,7 @@ const projectsData = {
         traces: [
             "Certif MOOC",
         ],
-        image: "./images/mooc.png",
+        image: "https://ugostanciu.github.io/portfolio/images/mooc.png",
         reflection: "J’ai acquis une bonne maîtrise des concepts liés à SSH, notamment les mécanismes d’authentification par clés publiques/privées. Bien que l’explication des principes de sécurité et des algorithmes choisis par l’ANSSI ait été claire, j’aurais pu détailler davantage certains aspects techniques (par exemple, le calcul des tailles de clés ou la mise en œuvre sur des systèmes réels). Le résultat était satisfaisant, mais une analyse plus poussée des attaques possibles aurait enrichi ma présentation. Le temps m’a parfois manqué pour approfondir certains détails.",
         competences: ["UE 1"]
     },
@@ -47,7 +47,7 @@ const projectsData = {
             "Schéma logique",
             "Extrait de configuration de switch"
         ],
-        image: "./images/schema_sae12.png",
+        image: "https://ugostanciu.github.io/portfolio/images/schema_sae12.png",
         codeExample: `! Configuration interfaces VLAN sur switch Cisco 3750 !
 interface Vlan1
 no ip address
@@ -91,7 +91,7 @@ no ip address`,
             "Lien vers le site : https://ugostanciu.github.io/SAE_14/",
             "Capture du site :"
         ],
-        image : "./images/website.png",
+        image : "https://ugostanciu.github.io/portfolio/images/website.png",
         reflection: "Lors de la réalisation du projet, j'ai rencontré quelques défis. Le premier a concerné la mise en page responsive, où certaines sections du site ne s'affichaient pas correctement sur mobile. Cela était dû à une mauvaise gestion des media queries et à une utilisation limitée de Flexbox. Pour résoudre cela, j'ai réajusté les media queries et mieux intégré Flexbox, assurant ainsi un affichage fluide sur tous les appareils. Ensuite, lors de la validation W3C, plusieurs erreurs ont été détectées dans mes balises HTML et dans des propriétés CSS non conformes. J'ai corrigé ces erreurs en veillant à bien respecter les bonnes pratiques, notamment en fermant correctement toutes les balises et en ajustant certaines propriétés CSS. Cela a permis de valider mon code avec succès. Enfin, certaines animations CSS n'étaient pas assez fluides. Après avoir revu mes durées d'animation et optimisé les propriétés concernées, j'ai réussi à rendre les animations beaucoup plus fluides et agréables à l'œil. Si c'était à refaire, je commencerais par tester plus fréquemment la responsivité et la validité du code, afin de corriger rapidement les erreurs de mise en page et de validation. J'éviterais également d'ajouter les animations trop tôt dans le processus pour me concentrer sur la structure principale du site en priorité.",
         competences: ["UE 3"]
     },
@@ -141,7 +141,7 @@ no ip address`,
     traces: [
         "Pas de traces possibles pour cette SAE : uniquement du cours, un QCM et un TP noté."
     ],
-    image: "./images/ad.png",
+    image: "https://ugostanciu.github.io/portfolio/images/ad.png",
     reflection: "Lors de la réalisation de cette SAE, j'ai rencontré quelques difficultés, notamment lors de la configuration du service Active Directory et de la création des stratégies de groupe. Cependant, en suivant les instructions et en consultant la documentation en ligne, j'ai pu résoudre ces problèmes. J'ai également appris l'importance de la planification et de la documentation lors de la mise en place d'un environnement Active Directory. Si c'était à refaire, je commencerais par mieux comprendre les concepts théoriques avant de me lancer dans la pratique, et je serais plus rigoureux dans la documentation de mes étapes.",
     competences: ["UE 1"]
     },
@@ -167,7 +167,7 @@ no ip address`,
         "Certificat Matlab : https://matlabacademy.mathworks.com/progress/share/report.html?id=510062ea-4b6a-418b-9628-8ad59d6259c8",
         "Rapport de mesure et de cartographie :"
     ],
-    image: "./images/rapport.png",
+    image: "https://ugostanciu.github.io/portfolio/images/rapport.png",
     reflection: "Lors de cette SAÉ, j'ai rencontré des défis notamment dans la prise en main de Matlab et dans l'analyse des signaux. Pour résoudre ces problèmes, j'ai suivi l'initiation en ligne pour Matlab et j'ai travaillé en étroite collaboration avec mon groupe. J'ai également utilisé les ressources en ligne pour améliorer mes compétences en analyse de données. Si c'était à refaire, je commencerais plus tôt à travailler sur le projet pour avoir plus de temps pour l'analyse et la rédaction du rapport.",
     competences: ["UE 2"]
     },
@@ -195,7 +195,7 @@ no ip address`,
         "Lien vers le site : https://ugostanciu.github.io/sae23/",
         "Capture du site :"
     ],
-    image: "./images/instant-weather.png",
+    image: "https://ugostanciu.github.io/portfolio/images/instant-weather.png",
     reflection: "Lors de cette SAÉ, j'ai rencontré des défis notamment dans l'utilisation de l'API Météo et dans la manipulation du DOM. Pour résoudre ces problèmes, j'ai utilisé les ressources en ligne pour améliorer mes compétences en JavaScript et j'ai fait des tests réguliers pour déboguer mon code. Si c'était à refaire, je commencerais plus tôt à travailler sur les tests et le débogage pour avoir plus de temps pour les améliorer.",
     competences: ["UE 3"]
     },
@@ -221,7 +221,7 @@ no ip address`,
         "Schéma Logique :",
         "Extrait de configuration de switch"
     ],
-    image: "./images/sae24.png",
+    image: "https://ugostanciu.github.io/portfolio/images/sae24.png",
     codeExample: `! Configuration DHCP !
 ip dhcp pool VLAN20_POOL
    network 192.168.20.0 255.255.255.192
