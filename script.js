@@ -530,7 +530,6 @@ function closeModal() {
     modal.classList.remove('active');
     document.body.style.overflow = '';
     window.location.reload();
-    showSection(projects);
 }
 
 
