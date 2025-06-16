@@ -529,7 +529,8 @@ function closeModal() {
     const modal = document.getElementById('modalOverlay');
     modal.classList.remove('active');
     document.body.style.overflow = '';
-    window.location.reload()
+    window.location.reload();
+    showSection(projects);
 }
 
 
