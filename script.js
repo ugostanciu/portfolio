@@ -529,7 +529,7 @@ function closeModal() {
     const modal = document.getElementById('modalOverlay');
     modal.classList.remove('active');
     document.body.style.overflow = '';
-    window.location.reload();
+    window.location.reload()
 }
 
 
@@ -593,12 +593,12 @@ function downloadCV() {
 }
 
 // Navigation mobile (hamburger menu)
-document.addEventListener('click', function(e) {
-    if (e.target.closest('.nav-toggle')) {
-        const navMenu = document.querySelector('.nav-menu');
-        navMenu.classList.toggle('active');
-    }
-});
+// document.addEventListener('click', function(e) {
+//     if (e.target.closest('.nav-toggle')) {
+//         const navMenu = document.querySelector('.nav-menu');
+//         navMenu.classList.toggle('active');
+//     }
+// });
 
 // Gestion des raccourcis clavier
 document.addEventListener('keydown', function(e) {
@@ -633,14 +633,14 @@ function typeWriter(element, text, speed = 100) {
 }
 
 // Effet parallaxe léger sur l'animation réseau
-window.addEventListener('scroll', function() {
-    const scrollY = window.scrollY;
-    const networkAnimation = document.querySelector('.network-animation');
+// window.addEventListener('scroll', function() {
+//     const scrollY = window.scrollY;
+//     const networkAnimation = document.querySelector('.network-animation');
     
-    if (networkAnimation && currentSection === 'home') {
-        networkAnimation.style.transform = `translateY(${scrollY * 0.1}px)`;
-    }
-});
+//     if (networkAnimation && currentSection === 'home') {
+//         networkAnimation.style.transform = `translateY(${scrollY * 0.1}px)`;
+//     }
+// });
 
 // Animation des statistiques
 function animateStats() {
