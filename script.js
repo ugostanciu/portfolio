@@ -531,6 +531,7 @@ function closeModal() {
     document.body.style.overflow = '';
 }
 
+
 function showCompetenceFromProject(competenceId) {
     closeModal();
     showSection('skills');
@@ -807,11 +808,6 @@ function showUEDetails(ueId) {
     document.body.style.overflow = 'hidden';
 }
 
-// Fonction pour fermer la modal (à ajouter si elle n'existe pas déjà)
-function closeModal() {
-    document.getElementById('modalOverlay').style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
 
 // Fermer la modal en cliquant sur l'overlay
 document.getElementById('modalOverlay').addEventListener('click', function(e) {
