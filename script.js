@@ -217,8 +217,7 @@ no ip address`,
         "Configuration des services réseau",
         "Travail en collaboration avec les autres membres du groupe pour intégrer les différentes parties du projet"
     ],
-    traces: [
-        "Schéma Logique :",
+    traces: [,
         "Extrait de configuration de switch"
     ],
     image: "https://ugostanciu.github.io/portfolio/images/sae24.png",
@@ -235,7 +234,59 @@ ip dhcp pool VLAN30_POOL
 !`,
     reflection: "Lors de cette SAÉ, j'ai rencontré des défis notamment dans la coordination avec les autres membres du groupe et dans la mise en place de la partie réseau. Pour résoudre ces problèmes, j'ai travaillé en étroite collaboration avec mon groupe et j'ai utilisé les ressources en ligne pour améliorer mes compétences en réseau. Si c'était à refaire, je commencerais plus tôt à travailler sur la documentation technique pour avoir plus de temps pour la rédiger correctement.",
     competences: ["UE 1", "UE 2", "UE 3"]
+    },
+
+    sae301: {
+    title: "SAÉ 3.01 & 3.02 - Déploiement d'un réseau multi-sites et système de transmission",
+    context: "Projet d'envergure réalisé avec la totalité des étudiants en formation initiale (plus de 30 personnes) pour un opérateur fictif. L'objectif était de mettre en œuvre un service réseau à valeur ajoutée pour une autre entreprise fictive, intégrant des compétences pointues en réseaux, systèmes, télécommunications et gestion de projet.",
+    objectives: [
+        "Proposer et dimensionner des solutions techniques répondant à un cahier des charges opérateur complexe",
+        "Mettre en œuvre et caractériser les performances d'un système de transmission (fibre, routage)",
+        "Développer une application client/serveur sécurisée avec authentification et sauvegarde des données",
+        "Concevoir des interfaces de gestion pour l'échange d'informations au sein de l'entreprise"
+    ],
+    contribution: "J'ai assuré le rôle de chef de projet global pour l'ensemble de la promotion des initiaux, pilotant la stratégie de déploiement et servant de point de contact unique entre les équipes techniques et les commanditaires.",
+    points: [
+        "Coordination de plus de 30 étudiants répartis en deux lots techniques majeurs",
+        "Supervision du lot Infrastructure : Plan IP, routage backbone OSPF, VLANs et boucle fibre OADM",
+        "Suivi du lot Système et Services : Hyperviseur Proxmox, LDAP, DNS/DHCP et stockage Nextcloud",
+        "Management du reporting quotidien et validation des livrables techniques critiques (DIO, PTI, PEE)"
+    ],
+    traces: [
+        "DIO (Document d'Informations Global regroupant toute la configuration technique)"
+    ],
+    image: "https://ugostanciu.github.io/portfolio/images/sae301.png",
+    reflection: "Assumer la responsabilité de chef de projet pour la totalité de la promotion initiale (plus de 30 personnes) a été une expérience formatrice exceptionnelle et intense. Gérer un groupe de cette envergure m'a appris à naviguer entre les exigences techniques strictes de l'opérateur Krypcom et les réalités humaines du travail d'équipe à grande échelle. J'ai dû développer des compétences avancées en leadership, notamment pour synchroniser les interdépendances critiques entre le pôle Infrastructure et le pôle Système, tout en maintenant la motivation globale. Cette immersion m'a prouvé que la réussite d'un projet de cette taille repose autant sur la rigueur organisationnelle et la délégation de confiance que sur la clarté de la communication transversale.",
+    competences: ["UE 1", "UE 2", "UE 3", "UE Cyber1", "UE Cyber2"]
+    },
+
+    sae303 : {
+    title: "SAÉ 3.Cyber.03 - Audit et Sécurisation d'une Infrastructure Critique",
+    context: "Projet de consulting pour une société fictive, spécialisée dans les énergies renouvelables. L'objectif consistait à moderniser une infrastructure réseau obsolète par le déploiement d'une architecture redondante, suivi d'une phase d'audit offensif croisé visant à identifier et exploiter les vulnérabilités du système.",
+    objectives: [
+        "Concevoir une infrastructure réseau multi-sites segmentée et hautement disponible",
+        "Réaliser un audit de sécurité complet (Reconnaissance, Scanning, Exploitation de vulnérabilités)",
+        "Analyser la criticité des failles via le référentiel CVSS et proposer des mesures de remédiation",
+        "Assurer la conformité de l'infrastructure selon les recommandations de l'ANSSI"
+    ],
+    contribution: "Analyste Réseaux et Sécurité au sein d'une équipe de 5 collaborateurs. J'ai piloté l'ingénierie de l'adressage IP et l'audit protocolaire lors de la phase offensive.",
+    points: [
+        "Élaboration du plan d'adressage IP détaillé et conception du schéma logique global de l'infrastructure",
+        "Exploitation de la vulnérabilité Cisco Smart Install (CVE-2018-0171) via le protocole TFTP pour l'exfiltration de configurations",
+        "Audit de la politique d'authentification : récupération et cassage de hashs SSH MD5 (Type 5) avec Hashcat",
+        "Mise en œuvre technique et configuration de l'infrastructure de virtualisation sous Proxmox",
+        "Rédaction des livrables de suivi (journal de bord) et documentation technique de l'infrastructure"
+    ],
+    traces: [
+        "Rapport d'Audit de Sécurité (Analyse d'impact et méthodologie d'exploitation)",
+        "Dossier d'Informations Global (DIO) et Schématisation réseau complexe",
+        "Cahier de tests et de validation (PEE)"
+    ],
+    image: "https://ugostanciu.github.io/portfolio/images/saecyber.png",
+    reflection: "Cette expérience a été déterminante dans ma compréhension des enjeux de la cybersécurité opérationnelle. L'identification et l'exploitation réussie de protocoles legacy ont souligné l'importance du durcissement (hardening) des équipements réseau. Travailler au sein d'une équipe restreinte sur des problématiques aussi critiques m'a permis d'affiner ma rigueur méthodologique, tant dans la phase de conception que dans la rédaction des recommandations de sécurité conformes aux standards industriels.",
+    competences: ["UE 1", "UE 2", "UE 3", "UE Cyber1", "UE Cyber2"]
     }
+
 };
 
 // Initialisation
@@ -371,7 +422,7 @@ function initializeRadarChart() {
     
     const data = {
     labels: ['Administration', 'Interconnexion', 'Sécurité', 'Codage'],
-        values: [75, 60, 40, 80]
+        values: [80, 60, 52, 95]
     };
     
     drawRadarChart(ctx, centerX, centerY, radius, data);
@@ -788,6 +839,50 @@ const apprentissagesCritiques = {
             {
                 code: "AC13.06",
                 description: "S'intégrer dans un environnement propice au développement et au travail collaboratif"
+            }
+        ]
+    },
+    uecyber1: {
+        title: "UE Cyber1 - Administrer un système d’information sécurisé ",
+        description: "Cette UE sensibilise aux vulnérabilités et aux remédiations.",
+        apprentissages: [
+            {
+                code: "AC24.01",
+                description: "Connaître et utiliser les bonnes pratiques et les recommandations de cybersécurité"
+            },
+            {
+                code: "AC24.02 ",
+                description: "Mettre en œuvre les outils fondamentaux de sécurisation d’une infrastructure du réseau"
+            },
+            {
+                code: "AC24.03",
+                description: "Sécuriser les services"
+            },
+            {
+                code: "AC24.04 ",
+                description: "Choisir les outils cryptographiques adaptés au besoin fonctionnel du système d’information"
+            },
+            {
+                code: "AC24.05",
+                description: "Connaître les différents types d’attaque"
+            },
+            {
+                code: "AC24.06",
+                description: "Comprendre des documents techniques en anglais"
+            }
+        ]
+    },
+    uecyber2: {
+        title: "UE Cyber2 - Surveiller un système d’information sécurisé ",
+        description: "Cette UE enseigne une maitrise des outils de surveillance et de test",
+        apprentissages: [
+            {
+                code: "AC25.01",
+                description: "Administrer les protections contre les logiciels malveillants"
+            },
+            {
+                code: "AC25.02",
+                description: "Prendre en main des outils de test de pénétration réseau/système"
             }
         ]
     }
