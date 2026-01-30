@@ -255,13 +255,13 @@ ip dhcp pool VLAN30_POOL
     traces: [
         "DIO (Document d'Informations Global regroupant toute la configuration technique)"
     ],
-    image: "https://ugostanciu.github.io/portfolio/images/sae301.png",
+    image: "https://ugostanciu.github.io/portfolio/images/sae301ok.png",
     reflection: "Assumer la responsabilité de chef de projet pour la totalité de la promotion initiale (plus de 30 personnes) a été une expérience formatrice exceptionnelle et intense. Gérer un groupe de cette envergure m'a appris à naviguer entre les exigences techniques strictes de l'opérateur Krypcom et les réalités humaines du travail d'équipe à grande échelle. J'ai dû développer des compétences avancées en leadership, notamment pour synchroniser les interdépendances critiques entre le pôle Infrastructure et le pôle Système, tout en maintenant la motivation globale. Cette immersion m'a prouvé que la réussite d'un projet de cette taille repose autant sur la rigueur organisationnelle et la délégation de confiance que sur la clarté de la communication transversale.",
     competences: ["UE 1", "UE 2", "UE 3", "UE Cyber1", "UE Cyber2"]
     },
 
     sae303 : {
-    title: "SAÉ 3.Cyber.03 - Audit et Sécurisation d'une Infrastructure Critique",
+    title: "SAÉ 3.Cyber.03 & 3.Cyber.04 - Audit et Sécurisation d'une Infrastructure Critique",
     context: "Projet de consulting pour une société fictive, spécialisée dans les énergies renouvelables. L'objectif consistait à moderniser une infrastructure réseau obsolète par le déploiement d'une architecture redondante, suivi d'une phase d'audit offensif croisé visant à identifier et exploiter les vulnérabilités du système.",
     objectives: [
         "Concevoir une infrastructure réseau multi-sites segmentée et hautement disponible",
@@ -278,9 +278,7 @@ ip dhcp pool VLAN30_POOL
         "Rédaction des livrables de suivi (journal de bord) et documentation technique de l'infrastructure"
     ],
     traces: [
-        "Rapport d'Audit de Sécurité (Analyse d'impact et méthodologie d'exploitation)",
-        "Dossier d'Informations Global (DIO) et Schématisation réseau complexe",
-        "Cahier de tests et de validation (PEE)"
+        "Rapport d'Audit de Sécurité (Analyse d'impact et méthodologie d'exploitation)"
     ],
     image: "https://ugostanciu.github.io/portfolio/images/saecyber.png",
     reflection: "Cette expérience a été déterminante dans ma compréhension des enjeux de la cybersécurité opérationnelle. L'identification et l'exploitation réussie de protocoles legacy ont souligné l'importance du durcissement (hardening) des équipements réseau. Travailler au sein d'une équipe restreinte sur des problématiques aussi critiques m'a permis d'affiner ma rigueur méthodologique, tant dans la phase de conception que dans la rédaction des recommandations de sécurité conformes aux standards industriels.",
