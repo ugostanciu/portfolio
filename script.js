@@ -420,7 +420,7 @@ function initializeRadarChart() {
     
     const data = {
     labels: ['Administration', 'Interconnexion', 'Sécurité', 'Codage'],
-        values: [80, 60, 52, 95]
+        values: [80, 66, 62, 91]
     };
     
     drawRadarChart(ctx, centerX, centerY, radius, data);
@@ -930,3 +930,4 @@ document.getElementById('modalOverlay').addEventListener('click', function(e) {
         closeModal();
     }
 });
+
